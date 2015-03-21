@@ -20,7 +20,7 @@ And the output should be:
   Alabama Cats VS Florida Phillies
   New Jersey Devils VS South Dakota Dogs
   ```
-  
+
  Our Approach:
   * read the wikipedia page to learn what a round robin tournament is
   * Draw the problem on paper to see if there are any patterns that jump out at us
@@ -29,10 +29,12 @@ And the output should be:
   * have fun in irb exploring the various ruby methods
   * get frustrated and confused
   * laugh and give one another high fives when we figure it out
-  
+
 Our Algorithm:
   * get the arguments from the command line and store them in an array
   * keep track of how many rounds are necessary based on the number of teams in the tournament
+  * If there are an odd number of teams in the tournament then introduce a 'buy' and whenever
+    a team ends up paired with this dummy team, omit them from the schedule for that round
   * send the array to a recursive pairing method to pair the teams up for the current round
   * rotate the array of teams while keeping the first team fixed in place, and repeat the pairing
     process n times where n is the number of rounds needed
