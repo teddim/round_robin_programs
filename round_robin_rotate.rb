@@ -16,7 +16,7 @@ end
 
 ###MAIN PROGRAM
 @input_as_array = ARGV.first.split(",")
-number_of_rounds = @input_as_array.length
+number_of_rounds = @input_as_array.length - 1
 puts "World's Best Tournament"
 
 number_of_rounds.times do |i|
