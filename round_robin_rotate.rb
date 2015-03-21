@@ -16,14 +16,23 @@ end
 
 ###MAIN PROGRAM
 @input_as_array = ARGV.first.split(",")
-number_of_rounds = @input_as_array.length - 1
+
+if @input_as_array.length.even?
+  number_of_rounds = @input_as_array.length - 1
+else
+  number_of_rounds = @input_as_array.length
+end
+
 puts "World's Best Tournament"
 
 number_of_rounds.times do |i|
-  # Print the round number and each match pairing
+# Print the round number and each match pairing
   puts ""
   puts "Round #{i+1}:"
   pair_teams(@input_as_array)
   shift_array
+  
+# If you want to see what the array looks like after each round, uncomment
+# the line below.
 # puts "#{@input_as_array}"
 end
