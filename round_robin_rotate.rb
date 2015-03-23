@@ -3,7 +3,7 @@
 
 def pair_teams (team_array)
   pair = [team_array.first,team_array.last]
-  if pair[0] != "buy" && pair[1] != "buy"
+  if pair[0] != "bye" && pair[1] != "bye"
     puts "#{pair[0].strip} VS #{pair[1].strip}"
   end
   new_array = team_array[1..-2]
@@ -23,7 +23,7 @@ if @input_as_array.length.even?
   number_of_rounds = @input_as_array.length - 1
 else
   number_of_rounds = @input_as_array.length
-  @input_as_array << "buy"
+  @input_as_array << "bye"
 end
 
 puts "World's Best Tournament"

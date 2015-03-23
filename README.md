@@ -33,7 +33,7 @@ And the output should be:
 Our Algorithm:
   * get the arguments from the command line and store them in an array
   * keep track of how many rounds are necessary based on the number of teams in the tournament
-  * If there are an odd number of teams in the tournament then introduce a 'buy' and whenever
+  * If there are an odd number of teams in the tournament then introduce a 'bye' and whenever
     a team ends up paired with this dummy team, omit them from the schedule for that round
   * send the array to a recursive pairing method to pair the teams up for the current round
   * rotate the array of teams while keeping the first team fixed in place, and repeat the pairing
